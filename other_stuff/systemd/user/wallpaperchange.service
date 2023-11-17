@@ -1,0 +1,9 @@
+[Unit]
+Description=To run wallpaper_change_1min.sh 
+
+[Service]
+ExecStart=/home/akash/.config/hypr/wallpaper_change.sh
+Restart=always
+
+[Install]
+WantedBy=default.target
