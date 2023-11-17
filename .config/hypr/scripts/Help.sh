@@ -1,2 +1,2 @@
 #!/bin/sh
-mousepad ~/.config/hypr/HelpFile.md
+foot nvim ~/.config/hypr/HelpFile.md

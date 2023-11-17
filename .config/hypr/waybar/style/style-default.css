@@ -14,7 +14,7 @@ margin-bottom: 1px;
 window#waybar {
   /* background-color: rgba(26, 27, 38, 0.5); */
   background-color: transparent;
-  color: #ffffff;
+  color:  #86b4fa;
   transition-property: background-color;
   transition-duration: 0.5s;
   /* border-top: 8px transparent; */
@@ -91,6 +91,7 @@ tooltip label{
 #custom-lock,
 #custom-weather,
 #window,
+#custom-spotify,
 #custom-weather.severe,
 #custom-weather.sunnyDay,
 #custom-weather.clearNight,
@@ -264,12 +265,13 @@ label:focus {
   color: #f53c3c;
 }
 
-#custom-media {
-  background-color: #66cc99;
-  color: #2a5c45;
+#custom-spotify {
+  /* background-color: #66cc99; */
+  color:  #86b4fa;
   min-width: 100px;
 }
 
+/*
 #custom-media.custom-spotify {
   background-color: #66cc99;
 }
@@ -277,6 +279,7 @@ label:focus {
 #custom-media.custom-vlc {
   background-color: #ffa000;
 }
+*/
 
 #temperature.critical {
   background-color: #eb4d4b;
@@ -307,3 +310,8 @@ label:focus {
 #taskbar button.active {
   background-color: #7f849c;
 }
+
+#window {
+	color: #cba6f7;
+}
+

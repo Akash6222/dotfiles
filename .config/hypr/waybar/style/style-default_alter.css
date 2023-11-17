@@ -30,7 +30,7 @@ window#waybar {
     background-color: rgba(50, 50, 50, 0.0);
     /*background-color: @bgcolor;*/
     /* border-bottom: 0px solid rgba(100, 114, 125, 0.5); */
-    color: #ffffff;
+    color:  #cba6f7;
     transition-property: background-color;
     transition-duration: .5s;
     border-radius: 0;
@@ -106,6 +106,7 @@ tooltip label{
 #pulseaudio,
 #wireplumber,
 #custom-media,
+#custom-spotify,
 #tray,
 #cava,
 #mode,
@@ -124,8 +125,6 @@ tooltip label{
     /* background-color: #bbccdd; */
     background-color:transparent;
 }
-
-#window,
 #workspaces {
     margin: 0 4px;
 }
@@ -236,7 +235,7 @@ label:focus {
      color: @accent3;
 }
 #custom-media {
-    background-color: #66cc99;
+   /* background-color: #66cc99; */
     color: #2a5c45;
     min-width: 100px;
 }
@@ -305,4 +304,10 @@ label:focus {
     color: #606060;
     margin: 0 1px;
     padding-bottom: 5px;
+}
+
+#custom-spotify {
+  /* background-color: #66cc99; */
+  color:   #86b4fa;
+  min-width: 100px;
 }

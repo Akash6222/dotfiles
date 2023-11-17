@@ -64,6 +64,8 @@ tooltip label{
 #custom-media,
 #custom-updater,
 #custom-lock,
+#window,
+#custom-spotify,
 #custom-weather, 
 #idle_inhibitor {
 	border-radius: 8px;
@@ -202,9 +204,6 @@ tooltip label{
 #bluetooth {
 	background-color: #89dceb;
 }
-#window {
-	color: #ffffff;
-}
 
 #pulseaudio {
 	background-color: #fab387;
@@ -225,3 +224,13 @@ tooltip label{
 	background-color: #313244;
 	color: #cdd6f4;
 }
+
+#window {
+	background-color: #cba6f7;
+	
+}
+
+#custom-spotify {
+	background-color: #86b4fa;
+}
+

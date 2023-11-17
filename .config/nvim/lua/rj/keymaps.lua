@@ -84,5 +84,7 @@ keymap("n", "<A-q>", ":tabclose<CR>", opts)
 keymap("n", "<A-i>", ":tabnew<CR>", opts)
 
 keymap("n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
-keymap("n", "<C-m>", "<cmd>lua vim.lsp.inlay_hint(0,nil)<CR>", opts)
--- keymap("n", "-", require("oil").open, { desc = "Open parent directory" })
+keymap("n", "<C-h>", "<cmd>lua vim.lsp.inlay_hint(0,nil)<CR>", opts)
+keymap("n", "<leader>o", "<cmd>URLOpenUnderCursor<CR>", opts)
+-- keymap("n", "-", require("oil").open, { desc = "Open parent directory" }) 
+

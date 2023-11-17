@@ -74,7 +74,7 @@ M.opts = {
     col = 1,
   },
   yadm = {
-    enable = true,
+    enable = false,
   },
 }
 

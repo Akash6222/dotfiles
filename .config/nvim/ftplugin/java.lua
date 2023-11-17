@@ -1,7 +1,3 @@
-vim.opt_local.shiftwidth = 4
-vim.opt_local.tabstop = 4
--- vim.opt_local.cmdheight = 2 -- more space in the neovim command line for displaying messages
-
 local status, jdtls = pcall(require, "jdtls")
 if not status then
   return
@@ -86,8 +82,8 @@ local config = {
     workspace_dir,
   },
 
-  on_attach = require("user.lsp.handlers").on_attach,
-  capabilities = require("user.lsp.handlers").capabilities,
+  on_attach = require("rj.lsp.attach").on_attach,
+  capabilities = require("rj.lsp.attach").capabilities,
 
   -- 💀
   -- This is the default if not provided, you can remove it. Or adjust as needed.

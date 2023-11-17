@@ -66,12 +66,38 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
+-- For mini.indentscope
+-- vim.api.nvim_create_autocmd({ "FileType" }, {
+--   pattern = {
+--     "alpha",
+--     "neo-tree",
+--     "help",
+--     "startify",
+--     "dashboard",
+--     "packer",
+--     "neogitstatus",
+--     "NvimTree",
+--     "Trouble",
+--   },
+--   callback = function()
+--     vim.b.miniindentscope_disable = true
+--   end,
+-- })
+
 vim.api.nvim_create_autocmd({ "BufReadPost" }, {
   pattern = "*.pdf",
   callback = function(ev)
     local filename = ev.file
     vim.fn.jobstart({ "xdg-open", filename }, { detach = true })
     vim.api.nvim_buf_delete(0, {})
+  end,
+})
+
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = { "c", "go", "java" },
+  callback = function()
+    vim.opt.shiftwidth = 4
+    vim.opt.tabstop = 4
   end,
 })
 

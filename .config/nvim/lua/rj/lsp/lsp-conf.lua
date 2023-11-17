@@ -13,6 +13,7 @@ local servers = {
   pyright = "pyright",
   tailwindcss = "tailwindcss-language-server",
   dockerls = "docker-langserver",
+  gopls = "gopls",
 }
 for k, v in pairs(servers) do
   if vim.fn.executable(v) == 1 then
@@ -23,20 +24,6 @@ for k, v in pairs(servers) do
   else
     print("lspconfig: " .. v .. " not found")
   end
-end
-
-if vim.fn.executable("vscode-html-language-server") == 1 then
-  lspconfig.html.setup({
-    on_attach = require("rj.lsp.attach").on_attach,
-    capabilities = require("rj.lsp.attach").capabilities,
-    settings = {
-      html = {
-        format = {
-          enabled = false,
-        },
-      },
-    },
-  })
 end
 
 if vim.fn.executable("lua-language-server") == 1 then

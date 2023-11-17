@@ -33,19 +33,19 @@ main() {
     choice=$(menu | ${wofi_command} | cut -d. -f1)
     case $choice in
         1)
-            kitty -e nano "$hyprDir/ENVariables.conf"
+            foot -e nano "$hyprDir/ENVariables.conf"
             ;;
         2)
-            kitty -e nano "$hyprDir/WindowRules.conf"
+            foot -e nano "$hyprDir/WindowRules.conf"
             ;;
         3)
-            kitty -e nano "$hyprDir/Execs.conf"
+            foot -e nano "$hyprDir/Execs.conf"
             ;;
         4)
-            kitty -e nano "$hyprDir/Keybinds.conf"
+            foot -e nano "$hyprDir/Keybinds.conf"
             ;;
         5)
-            kitty -e nano "$hyprDir/Monitors.conf"
+            foot -e nano "$hyprDir/Monitors.conf"
             ;;
         *)
             ;;
