@@ -1,12 +1,12 @@
 vim.loader.enable()
 
-require("rj.options")
-require("rj.keymaps")
-require("rj.lazy")
-require("rj.autocommands")
---require("rj.macros")
-require("rj.icons")
--- require("rj.which-key")
+require("akash.options")
+require("akash.keymaps")
+require("akash.lazy")
+require("akash.autocommands")
+--require("akash.macros")
+require("akash.icons")
+-- require("akash.which-key")
 
 -- Enable autochdir
 vim.cmd([[set autochdir]])
@@ -16,3 +16,4 @@ vim.o.autochdir = true
 
 -- Bufferline 
 require("bufferline").setup{}
+require("octo").setup{}

@@ -82,8 +82,8 @@ local config = {
     workspace_dir,
   },
 
-  on_attach = require("rj.lsp.attach").on_attach,
-  capabilities = require("rj.lsp.attach").capabilities,
+  on_attach = require("akash.lsp.attach").on_attach,
+  capabilities = require("akash.lsp.attach").capabilities,
 
   -- 💀
   -- This is the default if not provided, you can remove it. Or adjust as needed.
