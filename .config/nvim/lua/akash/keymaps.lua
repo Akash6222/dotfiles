@@ -88,3 +88,7 @@ keymap("n", "<C-h>", "<cmd>lua vim.lsp.inlay_hint(0,nil)<CR>", opts)
 keymap("n", "<leader>o", "<cmd>URLOpenUnderCursor<CR>", opts)
 -- keymap("n", "-", require("oil").open, { desc = "Open parent directory" }) 
 
+-- Octo
+keymap("n", "<leader>O", "<cmd>Octo<cr>", opts)
+keymap("n", "<leader>Op", "<cmd>Octo pr list<cr>", opts)
+
