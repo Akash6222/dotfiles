@@ -17,3 +17,7 @@ vim.o.autochdir = true
 -- Bufferline 
 require("bufferline").setup{}
 require("octo").setup{}
+
+-- Discord 
+require("presence").setup{}
+
