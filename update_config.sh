@@ -5,7 +5,7 @@ config_dir="$HOME/.config/"
 other_stuff_dir="$HOME"
 
 # List of directories to copy from ~/.config
-config_directories=("nvim" "hypr" "foot" "cava" "neofetch" "ranger" "swappy" "wlogout")
+config_directories=("hypr" "foot" "cava" "neofetch" "ranger" "swappy" "wlogout")
 config_files=("starship.toml")
 
 # Copy specified directories and files from ~/.config to dotfiles/.config
