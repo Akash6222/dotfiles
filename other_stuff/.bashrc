@@ -16,12 +16,6 @@ PS1='[\u@\h \W]\$ '
 
 alias neofetch="neofetch --ascii ~/.config/neofetch/ascii --ascii_colors 6 7 1"
 
-function gpgkey() {
-	gpg --output "$1.sig" \
-		--default-key 280178FA27665D44 \
-		--detach-sign \
-		--sign "$1"
-}
 
 export VISUAL=nvim
 export EDITOR=nvim
