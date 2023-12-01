@@ -1,3 +1,4 @@
+#!/bin/bash
 
 dotfiles_dir="$(pwd)"
 config_dir="$HOME/.config/"
