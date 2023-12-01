@@ -4,7 +4,7 @@ iDIR="$HOME/.config/hypr/mako/icons"
 
 # Get brightness
 get_backlight() {
-	echo $(brightnessctl -m | cut -d, -f4)
+	echo $(brillo -G)
 }
 
 # Get icons
@@ -30,7 +30,7 @@ notify_user() {
 
 # Change brightness
 change_backlight() {
-	brightnessctl set "$1" && get_icon && notify_user
+	brillo -q "$1" && get_icon && notify_user
 }
 
 # Execute accordingly
@@ -39,12 +39,13 @@ case "$1" in
 		get_backlight
 		;;
 	"--inc")
-		change_backlight "+10%"
+		change_backlight "-A 5"
 		;;
 	"--dec")
-		change_backlight "10%-"
+		change_backlight "-U 5"
 		;;
 	*)
 		get_backlight
 		;;
 esac
+
