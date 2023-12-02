@@ -19,7 +19,7 @@ done
 
 
 # List of directories to copy from $HOME
-other_stuff_files=(".bashrc" ".current_wallpaper" ".gtkrc-2.0" ".nvidia-settings-rc" ".sys_cleanup" ".wallpaper_mode")
+other_stuff_files=(".current_wallpaper" ".gtkrc-2.0" ".nvidia-settings-rc" ".sys_cleanup" ".wallpaper_mode")
 
 for file in "${other_stuff_files[@]}"; do
     cp "$other_stuff_dir/$file" "$dotfiles_dir"/other_stuff
