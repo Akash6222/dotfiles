@@ -118,6 +118,8 @@ tooltip label{
 #window,
 #custom-cycle_wall,
 #custom-screen_locker,
+#custom-lock,
+#disk,
 #custom-weather {
     padding: 1px 6px 0px 6px;
     margin: 4px 3px 5px 3px;
@@ -212,6 +214,7 @@ label:focus {
 #pulseaudio-muted {
     color: @accent2;
 }
+
 #wireplumber {
     color: @accent4;
 }
@@ -231,9 +234,13 @@ label:focus {
 #disk {
     color: @accent5;
 }
+
+
 #custom-power_profile {
      color: @accent3;
 }
+
+
 #custom-media {
    /* background-color: #66cc99; */
     color: #2a5c45;
