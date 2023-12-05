@@ -106,6 +106,7 @@
   },
     
   "cpu": {
+    "format": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% 󰍛",
     "format": "{usage}% 󰍛",  
     "interval": 1,
     "format-alt-click": "click",

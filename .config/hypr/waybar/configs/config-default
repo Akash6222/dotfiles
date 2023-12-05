@@ -40,10 +40,10 @@
 	"cpu", 
 	"temperature", 
 	"memory",
-	"disk", 
+	//"disk", 
 	//"custom/light_dark",
 	//"idle_inhibitor", 
-	"custom/lock", 
+	//"custom/lock", 
 	"custom/power",
 	],
 }
