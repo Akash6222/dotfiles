@@ -3,4 +3,4 @@ sudo pacman -Scc
 sudo pacman -S pacman-contrib
 sudo pacman -Qtdq
 sudo pacman -R $(pacman -Qtdq)
-
+rm -rf .cache/
