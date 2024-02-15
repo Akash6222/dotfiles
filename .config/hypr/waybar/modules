@@ -79,8 +79,8 @@
   
   "clock": {
     //"format": " {:%H:%M}",
-    "format": " {:%I:%M %p %A %d %B  %Y}",
-    "format-alt": "{:%I:%M %p}",
+    "format": "{:%I:%M %p}",
+    "format-alt": " {:%I:%M %p %A %d %B  %Y}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode"          : "year",
@@ -250,7 +250,7 @@
   },
   
  "temperature": {
-    "interval": 0,
+    "interval": 1,
     "tooltip": false,
     //"hwmon-path": "/sys/class/hwmon/hwmon5/temp1_input",     // GPU1 amd
     "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",    // CPU Temp
