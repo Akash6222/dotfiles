@@ -14,7 +14,7 @@ while true; do
         if [ "$battery_percentage" -eq 20 ]; then
             notify-send "Warning" "Battery level is 20%"
         elif [ "$battery_percentage" -eq 15 ]; then
-            notify-send "Warning" "Battery level is 15%. System will be pushed to sleep soon."
+            notify-send "Warning" "Battery level is 15%. Soon system will be locked."
         elif [ "$battery_percentage" -lt 10 ]; then
             notify-send "Warning" "Battery level is below 10%. Locking screen in 10s."
             sleep 10
