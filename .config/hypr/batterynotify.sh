@@ -4,7 +4,8 @@
 
 # Flag to track if charging stopped notification has been sent
 charging_stopped_notified=0
-a=0
+# Flag to track if charging notification has been sent
+charging_notification_sent=0
 
 while true; do
     # Get the battery status (Charging or Discharging)
@@ -13,12 +14,13 @@ while true; do
     # Get the battery percentage
     battery_percentage=$(cat /sys/class/power_supply/BAT0/capacity)
 
+    # If the battery is discharging
     if [ "$battery_status" == "Discharging" ]; then
-        # Reset the flag if battery is discharging
+        # Reset the flags if the battery is discharging
         charging_stopped_notified=0
-        a=0
+        charging_notification_sent=0
 
-        # Check battery level and trigger warnings
+        # Check battery level and trigger warnings if necessary
         if [ "$battery_percentage" -eq 20 ]; then
             notify-send "Warning" "Battery level is 20%"
             sleep 120
@@ -30,17 +32,24 @@ while true; do
             sleep 10
             ~/.config/hypr/scripts/LockScreen.sh
         fi
+
+    # If the battery is not charging and charging stopped notification hasn't been sent yet
     elif [ "$battery_status" == "Not charging" ] && [ "$charging_stopped_notified" -eq 0 ]; then
         # Notify once when charging stops
         notify-send "Charging Stopped" "Charging Stopped at Battery level $battery_percentage%."
         
-        # Set the flag to indicate that notification has been sent
+        # Set the flag to indicate that charging stopped notification has been sent
         charging_stopped_notified=1
-        a=0
-    
-    elif [ "$battery_status" == "Charging" ] && [ "$a" -eq 0 ]; then
-        notify-send "Charging"
-        a=1
+        charging_notification_sent=0
+
+    # If the battery is charging and charging notification hasn't been sent yet
+    elif [ "$battery_status" == "Charging" ] && [ "$charging_notification_sent" -eq 0 ]; then
+        # Send a charging notification
+        notify-send "Charging" "Battery level is currently $battery_percentage%."
+        
+        # Set the flag to indicate that charging notification has been sent
+        charging_stopped_notified=0
+        charging_notification_sent=1
     fi
 
     # Sleep for 1 minute before checking again
