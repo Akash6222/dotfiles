@@ -112,7 +112,7 @@
     "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
     "format-alt": "{usage}% 󰍛",
     "on-click-right": "missioncenter",
-    "on-click-right": "foot --title btop sh -c 'btop'"
+    "on-click-right": "foot --title btop sh -c 'htop'"
   },
   
   "disk": {
