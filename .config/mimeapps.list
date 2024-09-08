@@ -1,0 +1,15 @@
+[Added Associations]
+text/plain=nvim.desktop;org.xfce.mousepad.desktop;
+text/x-csrc=org.xfce.mousepad.desktop;
+application/x-shellscript=nvim.desktop;
+text/x-python=org.xfce.mousepad.desktop;
+inode/directory=pycharm-professional.desktop;
+image/jpeg=swappy.desktop;
+image/png=swappy.desktop;
+application/json=nvim.desktop;
+
+[Default Applications]
+x-scheme-handler/https=librewolf.desktop
+x-scheme-handler/http=librewolf.desktop
+x-scheme-handler/postman=Postman.desktop
+inode/directory=pycharm-professional.desktop
