@@ -5,8 +5,8 @@ config_dir="$HOME/.config/"
 other_stuff_dir="$HOME"
 
 # List of directories to copy from ~/.config
-config_directories=("hypr" "foot" "cava" "neofetch" "ranger" "swappy" "wlogout" "mpv")
-config_files=("starship.toml")
+config_directories=("hypr" "cava" "neofetch" "ranger" "swappy" "wlogout" "mpv" "wallust" "Kvantum" "ags" "btop" "fastfetch" "kitty" "qt5ct" "qt6ct" "rofi" "swaync" "waybar")
+config_files=("mimeapps.list")
 
 # Copy specified directories and files from ~/.config to dotfiles/.config
 for dir in "${config_directories[@]}"; do
@@ -19,7 +19,7 @@ done
 
 
 # List of directories to copy from $HOME
-other_stuff_files=(".current_wallpaper" ".gtkrc-2.0" ".nvidia-settings-rc" ".sys_cleanup" ".wallpaper_mode")
+other_stuff_files=(".zshrc" ".gtkrc-2.0" ".nvidia-settings-rc" ".sys_cleanup")
 
 for file in "${other_stuff_files[@]}"; do
     cp "$other_stuff_dir/$file" "$dotfiles_dir"/other_stuff
