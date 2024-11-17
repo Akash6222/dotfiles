@@ -39,3 +39,14 @@ export LIBVA_DRIVER_NAME=vdpau
 
 export TERMINAL=kitty
 
+
+# pnpm
+export PNPM_HOME="/home/akash/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+export EDITOR=nvim
+export VISUAL=nvim
