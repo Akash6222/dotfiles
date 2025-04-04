@@ -33,6 +33,7 @@ SAVEHIST=10000
 setopt appendhistory
 
 alias g="lazygit"
+alias d="lazydocker"
 
 export VDPAU_DRIVER=nvidia
 export LIBVA_DRIVER_NAME=vdpau
