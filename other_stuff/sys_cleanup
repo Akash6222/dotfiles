@@ -1,0 +1,6 @@
+yes | sudo pacman -Sc 
+yes | sudo pacman -Scc
+yes | sudo pacman -S pacman-contrib
+sudo pacman -Qtdq
+sudo pacman -R $(pacman -Qtdq)
+#rm -rf .cache/

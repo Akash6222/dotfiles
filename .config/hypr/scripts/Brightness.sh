@@ -1,10 +1,13 @@
-#!/usr/bin/env bash
+#!/bin/bash
+## /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
+# Script for Monitor backlights (if supported) using brightnessctl
 
-iDIR="$HOME/.config/hypr/mako/icons"
+iDIR="$HOME/.config/swaync/icons"
+notification_timeout=1000
 
 # Get brightness
 get_backlight() {
-    echo $(brillo -G | awk '{print int($1+0.5)}')
+    echo $(pkexec brillo -G | awk '{print int($1+0.5)}')
 }
 
 # Get icons
@@ -30,7 +33,7 @@ notify_user() {
 
 # Change brightness
 change_backlight() {
-    brillo -q "$1" && get_icon && notify_user
+    pkexec brillo -q "$1" && get_icon && notify_user
 }
 
 # Execute accordingly
@@ -48,4 +51,3 @@ case "$1" in
         get_backlight
         ;;
 esac
-
