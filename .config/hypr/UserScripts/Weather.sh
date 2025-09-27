@@ -1,7 +1,10 @@
 #!/bin/bash
+# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
+# weather info from wttr. https://github.com/chubin/wttr.in
+# Remember to add city 
 
 city=
-cachedir=~/.cache/rbn
+cachedir="$HOME/.cache/rbn"
 cachefile=${0##*/}-$1
 
 if [ ! -d $cachedir ]; then
@@ -78,3 +81,7 @@ esac
 #echo $temp $condition
 
 echo -e "{\"text\":\""$temperature $condition"\", \"alt\":\""${weather[0]}"\", \"tooltip\":\""${weather[0]}: $temperature ${weather[1]}"\"}"
+
+cached_weather=" $temperature  \n$condition ${weather[1]}"
+
+echo -e $cached_weather >  "$HOME/.cache/.weather_cache"

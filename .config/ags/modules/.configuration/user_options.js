@@ -69,12 +69,14 @@ let configOptions = {
     'icons': {
         substitutions: {
             'codium-url-handler': "vscodium",
+            'codium': "vscodium",
             'code-url-handler': "visual-studio-code",
             'Code': "visual-studio-code",
             'GitHub Desktop': "github-desktop",
             'Minecraft* 1.20.1': "minecraft",
             'gnome-tweaks': "org.gnome.tweaks",
             'pavucontrol-qt': "pavucontrol",
+            'eu.betterbird.Betterbird' : "thunderbird",
 			'thunderbird-esr': "thunderbird",
             'wps': "wps-office2019-kprometheus",
             'wpsoffice': "wps-office2019-kprometheus",
