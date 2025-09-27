@@ -29,7 +29,6 @@
 	"group/mobo_drawer",
 	"custom/separator#blank",
 	"group/laptop",
-	"custom/separator#line",
 	"custom/weather",
 	],
 
@@ -38,7 +37,7 @@
 	"custom/cava_mviz",
 	"custom/separator#dot-line",
 	"clock",
-	"custom/separator#line",
+	"custom/separator#dot-line",
 	"hyprland/workspaces#roman",
 	"custom/separator#dot-line",
 	"idle_inhibitor",	
@@ -47,14 +46,12 @@
 
 "modules-right": [
 	"network#speed",
-	//"group/connections",
-	"custom/separator#line",
+	"custom/separator#dot-line",
 	"tray",
-	"mpris", 
-	//"group/audio",
-    "pulseaudio",
-    "pulseaudio#microphone",
-	"custom/separator#line",
+	"mpris",
+        "pulseaudio",
+        "pulseaudio#microphone",
+	"custom/separator#dot-line",
 	"custom/power",
 	],
 }
